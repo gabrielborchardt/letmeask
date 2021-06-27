@@ -1,7 +1,3 @@
-<h4 align="center"> 
-	🚧  React Select 🚀 Em construção...  🚧
-</h4>
-
 <p align="center">
   <img alt="Letmeask" src="src/assets/images/logo.svg" width="160px">
 </p>
