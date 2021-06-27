@@ -22,17 +22,16 @@ export function Question({
   isHighLighted = false,
 }: QuestionProps) {
   return (
-    <div className="question">
+    <div 
+      className={cx(
+        'question', 
+        { answered: isAnswered },
+        { highlighted: isHighLighted && !isAnswered },
+      )}
+    >
       <p>{content}</p>
       <footer>
-        <div
-          //className={`question ${isAnswered ? 'answered' : ''} {${isHighLighted ? 'highLighted' : ''}`}
-          className={cx(
-            'question',
-            { answered: isAnswered },
-            { highLighted: isHighLighted && !isAnswered }
-          )}
-        >
+        <div className="user-info">
           <img src={author.avatar} alt={author.name} />
           <span>{author.name}</span>
         </div>
